@@ -74,7 +74,16 @@ input, select, textarea {
 
 /* Basic */
 
-	html {
+	#home-nav a {
+		display: block;
+		text-align: center;
+		margin-top: .5em
+	}
+
+
+
+
+html {
 		box-sizing: border-box;
 	}
 
@@ -156,6 +165,8 @@ input, select, textarea {
 
 /* Wrapper */
 
+
+
 	@-moz-keyframes wrapper {
 		0% {
 			opacity: 0;
@@ -197,10 +208,10 @@ input, select, textarea {
 	}
 
 	#wrapper {
-		-moz-animation: wrapper 0.3s forwards;
-		-webkit-animation: wrapper 0.3s forwards;
-		-ms-animation: wrapper 0.3s forwards;
-		animation: wrapper 0.3s forwards;
+		-moz-animation: wrapper 0.1s forwards;
+		-webkit-animation: wrapper 0.1s forwards;
+		-ms-animation: wrapper 0.1s forwards;
+		animation: wrapper 0.1s forwards;
 		height: 100%;
 		left: 0;
 		opacity: 0;
@@ -301,7 +312,7 @@ input, select, textarea {
 
 	#bg {
 		background-size: 2250px auto;
-		width: 6750px;
+		width: 200vw;
 	}
 
 /* Overlay */
@@ -365,14 +376,22 @@ input, select, textarea {
 	}
 
 /* Main */
-
+#main-wrapper {
+	position: relative;
+}
+h1 {
+	/* Existing styles for h1 */
+	margin-top: 6vh;
+	text-align: center;
+	font-size: 3em;
+}
 	#main {
 		height: 100%;
-		left: 0;
+		left: 10vw;
 		position: fixed;
 		text-align: center;
-		top: 0;
-		width: 100%;
+		top: 11vh;
+		width: 80vw;
 	}
 
 		#main:before {
@@ -383,6 +402,46 @@ input, select, textarea {
 			vertical-align: middle;
 			width: 1px;
 		}
+#main {
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	direction: rtl;
+	justify-content: center;
+}
+
+#container {
+	width: 50vw;
+	height: 79vh;
+	margin: auto;
+	text-align: left;
+	overflow-y: scroll;
+	scrollbar-color: transparent transparent;
+}
+
+#container p,
+#container h3 {
+	padding-bottom: 1em;
+}
+
+#container::-webkit-scrollbar {
+	width: 10px;
+}
+
+#container::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+#container::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 5px;
+}
+
+#container::-webkit-scrollbar-thumb:horizontal {
+	width: 50%;
+	left: 25%;
+	right: 25%;
+}
 
 /* Header */
 
@@ -708,6 +767,49 @@ input, select, textarea {
 				#header nav a span {
 					display: none;
 				}
+
+.custom-button div {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+	border: 0;
+	display: inline-block;
+	border-radius: 100%;
+	border: solid 1px #fff;
+}
+
+.custom-button a:before {
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	display: block;
+	font-size: 1.75em;
+	height: 2.5em;
+	line-height: 2.5em;
+	position: relative;
+	text-align: center;
+	top: 0;
+	width: 2.5em;
+}
+
+.custom-button a:hover {
+	font-size: 1.1em;
+}
+
+.custom-button a:hover:before {
+	background-color: rgba(255, 255, 255, 0.175);
+	color: #fff;
+}
+
+.custom-button a:active {
+	font-size: 0.95em;
+	background: none;
+}
+
+.custom-button a:active:before {
+	background-color: rgba(255, 255, 255, 0.35);
+	color: #fff;
+}
 
 /* Footer */
 
