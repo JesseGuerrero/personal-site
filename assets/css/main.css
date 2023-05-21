@@ -393,7 +393,6 @@ h1 {
 		top: 11vh;
 		width: 80vw;
 	}
-
 		#main:before {
 			content: '';
 			display: inline-block;
@@ -424,8 +423,27 @@ h1 {
 	padding-bottom: 1em;
 }
 
+@media (max-width: 480px) {
+	#main {
+		height: 100%;
+		left: 2.5vw;
+		position: fixed;
+		text-align: center;
+		top: 11vh;
+		width: 95vw;
+	}
+	#container {
+		width: 95vw;
+		height: 79vh;
+		margin: auto;
+		text-align: left;
+		overflow-y: scroll;
+		scrollbar-color: transparent transparent;
+	}
+}
+
 #container::-webkit-scrollbar {
-	width: 10px;
+	width: 0px;
 }
 
 #container::-webkit-scrollbar-track {
