@@ -424,15 +424,18 @@ h1 {
 #container img {
 	float: left;
 }
-#container p,
-#container h3 {
-	padding-bottom: 1em;
-	font-size: 1.3em;
+@media (min-width: 720px) {
+	#container p,
+	#container h3 {
+		padding-bottom: 1em;
+		font-size: 1.5em;
+	}
+	#container h3 {
+		font-size: 2em;
+	}
 }
 
-#container h3 {
-	font-size: 2em;
-}
+
 
 embed {
 	width: 1200px;
@@ -482,6 +485,16 @@ embed {
 	embed {
 		width: 575px;
 		height: 750px;
+	}
+}
+
+@media (max-width: 400px) {
+	#container {
+		/* Add necessary CSS properties to maintain alignment */
+		display: block;
+		flex-wrap: wrap;
+		justify-content: left;
+		align-items: center;
 	}
 }
 
