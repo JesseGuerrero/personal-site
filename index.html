@@ -13,23 +13,113 @@
 			<div id="bg"></div>
 			<div id="overlay"></div>
 			<div id="main" style="top: 0vh; width: 100vw; left: 0vw;">
-
 				<!-- Header -->
-					<header id="header">
+				<div id="container">
+					<header id="header" style="align-self: center; !important">
 						<h1>Jesse Guerrero</h1>
 						<p>Software Development<!--&nbsp;&bull;&nbsp; Learning Enthusiast--></p>
 						<nav>
 							<ul>
-<!--								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
-<!--								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+								<!--								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+								<!--								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
 								<li><a href="https://www.linkedin.com/in/jguer/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/JesseGuerrero" class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://jesseguerrero.github.io/personal-site/assets/Jesse_Resume.pdf" class="icon solid fa-id-card"><span class="label">CV</span></a></li>
 								<li><a href="mailto:jessework@proton.me" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
-						<div class="custom-button"><a href="projects.html">Projects</a></div>
+						<div class="custom-button"><a href="#">Scroll down for projects</a></div>
 					</header>
+					<style>
+						h3 {
+							font-size: 1.5em;
+						}
+						iframe, img {
+							width: 100%;
+						}
+						@media (min-width: 1200px) {
+							iframe, img {
+								width: 70%;
+							}
+						}
+
+					</style>
+					<h3><strong>Darkan</strong></h3>
+					<p>
+						Worked with Darkan founder Trent Kress and friends to make a 2012 remake of the MMORPG, Runescape. The project
+						is purely educational with the intent of using the latest stacks and technologies to better serve our employers
+					</p>
+					<div>
+						<iframe style="height: 20em;" src="https://www.youtube.com/embed/hYMMyzsaIVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<i>Links</i>
+					<p>
+						GitHub: <a href="https://github.com/DarkanRS">https://github.com/DarkanRS</a><br>
+						Team: <a href="https://gitlab.com/groups/darkanrs/-/group_members">https://gitlab.com/groups/darkanrs/-/group_members</a><br>
+						Game live: <a href="https://darkan.org/">https://darkan.org</a><br>
+					</p>
+
+					<hr>
+					<h3>Darkan Websites</h3>
+					<p>
+						Worked on 2 editions out of 3 of the Darkan website. Across these editions the technologies used were: Java Spring
+						Boot, React, Node, Express, MongoDB and NestJS(Typescript API)
+					</p>
+					<p>
+						The latest edition was copied from Archive.org and was integrated with the Darkan API along with a custom implementation
+						of a blog CMS. It will go live soon
+					</p>
+					<img src="assets/css/images/2012web.png" style="height: auto;"><br>
+					<i>Links</i>
+					<p>
+						Current Darkan Website: <a href="https://darkan.org/">https://darkan.org</a><br>
+						Current GitHub: <a href="https://github.com/DarkanRS/website">https://github.com/DarkanRS/website</a><br>
+						Latest Website Github: <a href="https://github.com/JesseGuerrero/Runescape-2012-website-remake">https://github.com/JesseGuerrero/Runescape-2012-website-remake</a>
+					</p>
+					<hr>
+					<h3>Darkan API</h3>
+					<p>
+						Worked on the public facing API for Darkan with the Darkan founder. It includes 25+ endpoints which control the game
+						server from outside its environment in addition to providing access to its database
+					</p>
+					<img src="assets/css/images/NestJS.png" style="height: auto;"><br>
+					<i>Links</i>
+					<p>
+						GitLab: <a href="https://gitlab.com/JesseGuerrero/darkanapi/-/tree/dev-patch-4b8e?ref_type=heads">https://gitlab.com/JesseGuerrero/darkanapi/-/tree/dev-patch-4b8e?ref_type=heads</a>
+					</p>
+					<hr>
+					<h3>Adversarial Deep Learning With Mutation</h3>
+					<img src="assets/css/images/RoBERTa.jpg" style="height: auto;">
+					<p>
+						Worked with 2 professors directly for my thesis and studied machine learning in graduate school. I wrote the
+						code and procured datasets used for 3 papers. The code for the 3 papers is below
+					</p>
+					<i>Links</i>
+					<p>
+						GitHub: <a href="https://github.com/JesseGuerrero/Mutation-Based-Text-Detection">https://github.com/JesseGuerrero/Mutation-Based-Text-Detection</a><br>
+						Papers here: <a href="https://scholar.google.com/citations?user=7tsIRXYAAAAJ&hl=en">https://scholar.google.com/citations?user=7tsIRXYAAAAJ&hl=en</a><br>
+					</p>
+					<hr>
+					<h3>NS3 SDN Network Emulation</h3>
+					<p>
+						Used a networking framework in C++, NS3, to test an SDN network for performance differences with and without Quic
+						encryption. This work was published on ArXiv. Below is a demo of an NS3 SDN network and its paper
+					</p>
+					<div>
+						<iframe style="height: 20em;" src="https://www.youtube.com/embed/G2D83nIDCPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<i>Links</i>
+					<p>
+						GitHub: <a href="https://github.com/JesseGuerrero/Computer-Networks-5306-Semester-Project">https://github.com/JesseGuerrero/Computer-Networks-5306-Semester-Project</a><br>
+						Paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4384690">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4384690</a>
+					</p>
+					<hr>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
 			</div>
 		</div>
 		<script>
