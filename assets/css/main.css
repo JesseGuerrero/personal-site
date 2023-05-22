@@ -34,7 +34,7 @@ body {
 }
 
 p, h1, h2, h3, i, h4, h5 {
-	text-shadow: 0 0 5px black;
+	text-shadow: 0 0 8px black;
 }
 
 ol, ul {
@@ -243,7 +243,6 @@ html {
 
 		background: black url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
-		filter: blur(0.09rem);
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -423,14 +422,17 @@ h1 {
 	scrollbar-color: transparent transparent;
 	display: grid;
 }
-
+#container img {
+	float: left;
+}
 #container p,
 #container h3 {
 	padding-bottom: 1em;
+	font-size: 1.3em;
 }
 
 #container h3 {
-	font-size: 1.2em;
+	font-size: 2em;
 }
 
 embed {
