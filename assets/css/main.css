@@ -428,10 +428,10 @@ h1 {
 	#container p,
 	#container h3 {
 		padding-bottom: 1em;
-		font-size: 1.5em;
+		font-size: 0.9em;
 	}
 	#container h3 {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 }
 
@@ -453,7 +453,7 @@ embed {
 	}
 	#container {
 		width: 70vw;
-		height: 79vh;
+		height: 90vh;
 		margin: auto;
 		text-align: left;
 		overflow-y: scroll;
